@@ -1,0 +1,22 @@
+DATABASE mydb
+
+LAYOUT 
+GRID 
+{
+
+<t t1                                                                                 >
+    order_num        stock_num       quantity   price          
+  [c1               |c2            |c3          |c4              ] 
+<                                                                                     >
+} 
+END 
+ATTRIBUTES 
+
+EDIT c1= formonly.order_num;
+EDIT c2 =formonly.stock_num;
+EDIT c3 =FORMONLY.quantity;
+EDIT c4=formonly. price;
+
+END
+INSTRUCTIONS
+SCREEN RECORD s_items(order_num,stock_num,quantity,price); 

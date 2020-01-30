@@ -1,0 +1,44 @@
+#customerinput.per
+SCHEMA mydb
+
+LAYOUT
+    GRID
+{
+<G "Customer Information"                                                 >
+[mode_label                          ]
+["         id:"][fld001              ]
+["      fname:"][fld002              ]["  lname:"][fld003              ]
+["      state:"][fld004              ]
+["    zipcode:"][fld005              ]
+
+}
+    END --GRID
+END --LAYOUT
+
+TABLES
+    test
+END --TABLES
+
+ATTRIBUTES
+
+
+    LABEL mode_label = formonly.mode_label, COLOR=BLUE, STYLE=" ";
+    EDIT fld001 = test.id, COMMENT="Enter store number";
+    EDIT fld002 = test.fname, NOT NULL, COMMENT="Enter store name ";
+    EDIT fld003 = test.lname, COMMENT="Enter address line 1 ";
+    COMBOBOX fld004 = test.state, INITIALIZER=loadStateCombo,
+                      COMMENT="Select state ";
+    BUTTONEDIT fld005 = test.zipcode, ACTION=zoom, IMAGE="mag", COMMENT="Enter zip code ";
+     
+    
+END --ATTRIBUTES
+
+
+INSTRUCTIONS
+    SCREEN RECORD s_customer (test.id,
+                              test.fname,
+                              test.lname,
+                              test.state,
+                              test.zipcode)
+                            
+END --INSTRUCTIONS

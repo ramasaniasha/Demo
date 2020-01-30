@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceDatabase fileContentsEncoding="CP1252" version="3.0">
+<File n="inputex1/ex1.4gl" s="2" ts="20200129050856980">
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/comboboxHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/inputFactory.4gl"/>
+<Dep t="application_1/view.4gl"/>
+<Fct c="10" el="369" l="355" n="query_fun()" t="F" v="pub"/>
+<Fct c="18" el="353" l="351" n="errorHandler()" t="F" v="prv"/>
+<Fct c="10" el="349" l="344" n="inpupd_fun(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="341" l="320" n="load_fun()" t="F" v="pub"/>
+<Fct c="10" el="317" l="290" n="delete_check()" t="F" v="pub"/>
+<Fct c="10" el="288" l="273" n="delete_cust()" t="F" v="pub"/>
+<Fct c="17" el="268" l="190" n="inputorders(pMode INTEGER)" t="F" v="pub">
+<Call c="42" i="inputFactory" l="225" n="factoryList" t="F"/>
+<Call c="23" l="234" n="query_fun" t="F"/>
+</Fct>
+<Fct c="18" el="188" l="180" n="closeordersCursor()" t="F" v="prv"/>
+<Fct c="18" el="178" l="157" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="155" l="104" n="vieworders()" t="F" v="prv">
+<Call c="20" l="117" n="fetchRecord" t="F"/>
+<Call c="20" l="122" n="fetchRecord" t="F"/>
+<Call c="20" l="127" n="inputorders" t="F"/>
+<Call c="20" l="132" n="inputorders" t="F"/>
+<Call c="18" l="138" n="delete_check" t="F"/>
+<Call c="19" l="139" n="delete_cust" t="F"/>
+<Call c="23" l="145" n="load_fun" t="F"/>
+<Call c="28" l="147" n="inpupd_fun" t="F"/>
+</Fct>
+<Fct c="18" el="101" l="78" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="18" l="92" n="closeordersCursor" t="F"/>
+<Call c="14" l="96" n="closeordersCursor" t="F"/>
+</Fct>
+<Fct c="18" el="76" l="62" n="searchorders()" t="F" v="prv">
+<Call c="34" i="DyanamicLib" l="67" n="dynamicConstruct" t="F"/>
+<Call c="12" l="69" n="buildQuery" t="F"/>
+<Call c="18" l="70" n="vieworders" t="F"/>
+</Fct>
+<Fct c="1" el="60" l="49" n="main()" t="F" v="pub">
+<Call c="29" l="50" n="errorHandler" t="F"/>
+<Call c="11" l="56" n="searchorders" t="F"/>
+</Fct>
+</File>
+<File n="dailog/dailog.4gl" s="2" ts="20200127115415403">
+<Dep t="../Dialog_input/Source/DynamicUI.4gl"/>
+<Dep t="../Dialog_input/Source/UIHelper.4gl"/>
+<Fct c="17" el="188" l="178" n="loadStateCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+<Fct c="18" el="176" l="159" n="buildCustomerList(pWherePart STRING)" t="F" v="prv"/>
+<Fct c="17" el="157" l="155" n="enableMultiSelect()" t="F" v="pub"/>
+<Fct c="17" el="153" l="147" n="executeSearch(pWherePart STRING)" t="F" v="pub">
+<Call c="10" l="149" n="buildCustomerList" t="F"/>
+</Fct>
+<Fct c="17" el="145" l="127" n="handleDisplayArrayEvents(pDialog ui.Dialog,pEvent STRING,pCurrentRow INTEGER)" t="F" v="pub">
+<Call c="27" i="UIHelper" l="133" n="informationDialog" t="F"/>
+<Call c="27" i="UIHelper" l="135" n="informationDialog" t="F"/>
+<Call c="41" i="UIHelper" l="137" n="deleteConfirmation" t="F"/>
+</Fct>
+<Fct c="17" el="125" l="94" n="getDialogTriggers()" t="F" v="pub"/>
+<Fct c="18" el="92" l="73" n="dynamicCustomerSearchList()" t="F" v="prv">
+<Call c="47" l="79" n="getDialogTriggers" t="F"/>
+<Call c="48" l="80" n="handleDisplayArrayEvents" t="F"/>
+<Call c="43" l="81" n="executeSearch" t="F"/>
+<Call c="47" l="82" n="enableMultiSelect" t="F"/>
+<Call c="20" i="DynamicUI" l="88" n="dynamicSearchList" t="F"/>
+</Fct>
+<Fct c="18" el="71" l="16" n="customerSearchList()" t="F" v="prv">
+<Call c="26" l="42" n="buildCustomerList" t="F"/>
+</Fct>
+<Fct c="1" el="14" l="9" n="main()" t="F" v="pub">
+<Call c="10" l="11" n="customerSearchList" t="F"/>
+</Fct>
+</File>
+<File n="dailog/dailog_1.4gl" s="2" ts="20200127115415063">
+<Dep t="../Dialog_input/Source/DynamicUI.4gl"/>
+<Dep t="../Dialog_input/Source/UIHelper.4gl"/>
+<Fct c="18" el="28" l="13" n="customer_list()" t="F" v="prv"/>
+<Fct c="1" el="12" l="8" n="main()" t="F" v="pub">
+<Call c="7" l="10" n="customer_list" t="F"/>
+</Fct>
+</File>
+<File n="dailog_ex1/dailog_ex1.4gl" s="2" ts="20200127115414920">
+<Dep t="../Dialog_input/Source/DynamicUI.4gl"/>
+<Dep t="../Dialog_input/Source/UIHelper.4gl"/>
+<Fct c="10" el="323" l="304" n="delete_order()" t="F" v="pub"/>
+<Fct c="10" el="303" l="248" n="display_custarr()" t="F" v="pub"/>
+<Fct c="17" el="247" l="188" n="inputCustomer(pMode INTEGER)" t="F" v="pub"/>
+<Fct c="18" el="186" l="132" n="viewCustomer()" t="F" v="prv">
+<Call c="20" l="145" n="fetchRecord" t="F"/>
+<Call c="20" l="149" n="fetchRecord" t="F"/>
+<Call c="20" l="153" n="fetchRecord" t="F"/>
+<Call c="20" l="157" n="fetchRecord" t="F"/>
+<Call c="20" l="161" n="inputCustomer" t="F"/>
+<Call c="20" l="166" n="inputCustomer" t="F"/>
+<Call c="23" l="171" n="display_custarr" t="F"/>
+<Call c="16" l="176" n="delete_order" t="F"/>
+</Fct>
+<Fct c="18" el="130" l="122" n="closeCustomerCursor()" t="F" v="prv"/>
+<Fct c="18" el="120" l="97" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="95" l="71" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="18" l="86" n="closeCustomerCursor" t="F"/>
+<Call c="14" l="90" n="closeCustomerCursor" t="F"/>
+</Fct>
+<Fct c="18" el="69" l="50" n="searchCustomer()" t="F" v="prv">
+<Call c="32" i="DynamicUI" l="56" n="dynamicConstruct" t="F"/>
+<Call c="12" l="58" n="buildQuery" t="F"/>
+<Call c="18" l="59" n="viewCustomer" t="F"/>
+<Call c="18" l="60" n="closeCustomerCursor" t="F"/>
+</Fct>
+<Fct c="1" el="48" l="32" n="main()" t="F" v="pub">
+<Call c="11" l="42" n="searchCustomer" t="F"/>
+</Fct>
+</File>
+<File n="display_row/display_row.4gl" s="2" ts="20200127115416045">
+<Fct c="1" el="21" l="2" n="main()" t="F" v="pub"/>
+</File>
+<File n="../../Downloads/DialogEx/DialogExamples/Source/inputFactory.4gl" s="2" ts="20200128172217861">
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/enums.4gl"/>
+<Fct c="17" el="281" l="247" n="factoryList()" t="F" v="pub">
+<Call c="23" i="UIHelper" l="274" n="informationDialog" t="F"/>
+</Fct>
+<Fct c="17" el="245" l="180" n="inputFactory(pMode INTEGER)" t="F" v="pub"/>
+<Fct c="18" el="178" l="126" n="viewFactory()" t="F" v="prv">
+<Call c="20" l="139" n="fetchRecord" t="F"/>
+<Call c="20" l="143" n="fetchRecord" t="F"/>
+<Call c="20" l="147" n="fetchRecord" t="F"/>
+<Call c="20" l="151" n="fetchRecord" t="F"/>
+<Call c="20" l="155" n="inputFactory" t="F"/>
+<Call c="24" l="156" n="fetchRecord" t="F"/>
+<Call c="20" l="161" n="inputFactory" t="F"/>
+<Call c="24" l="162" n="fetchRecord" t="F"/>
+<Call c="29" i="UIHelper" l="167" n="deleteConfirmation" t="F"/>
+<Call c="24" l="169" n="fetchRecord" t="F"/>
+</Fct>
+<Fct c="18" el="124" l="86" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="84" l="55" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="33" l="74" n="fetchRecord" t="F"/>
+</Fct>
+<Fct c="18" el="53" l="36" n="searchFactory()" t="F" v="prv">
+<Call c="32" i="DynamicUI" l="41" n="dynamicConstruct" t="F"/>
+<Call c="12" l="43" n="buildQuery" t="F"/>
+<Call c="18" l="44" n="viewFactory" t="F"/>
+</Fct>
+<Fct c="1" el="34" l="18" n="main()" t="F" v="pub">
+<Call c="11" l="28" n="searchFactory" t="F"/>
+</Fct>
+</File>
+<File n="input_dialog/input_dialog.4gl" s="2" ts="20200128174821939">
+<Dep t="../DialogExamples (2)/Source/comboboxHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Fct c="10" el="320" l="261" n="display_custarr()" t="F" v="pub"/>
+<Fct c="17" el="260" l="257" n="loadStateCombo(pComboBox ui.ComboBox)" t="F" v="pub">
+<Call c="25" i="comboboxHelper" l="259" n="loadStateCombo" t="F"/>
+</Fct>
+<Fct c="17" el="255" l="188" n="inputCustomer(pMode INTEGER)" t="F" v="pub"/>
+<Fct c="18" el="186" l="136" n="viewCustomer()" t="F" v="prv">
+<Call c="20" l="149" n="fetchRecord" t="F"/>
+<Call c="20" l="157" n="fetchRecord" t="F"/>
+<Call c="20" l="161" n="fetchRecord" t="F"/>
+<Call c="20" l="165" n="inputCustomer" t="F"/>
+<Call c="20" l="170" n="inputCustomer" t="F"/>
+<Call c="29" i="UIHelper" l="175" n="deleteConfirmation" t="F"/>
+<Call c="24" l="177" n="fetchRecord" t="F"/>
+</Fct>
+<Fct c="18" el="134" l="126" n="closeCustomerCursor()" t="F" v="prv"/>
+<Fct c="18" el="124" l="101" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="99" l="75" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="18" l="90" n="closeCustomerCursor" t="F"/>
+<Call c="14" l="94" n="closeCustomerCursor" t="F"/>
+</Fct>
+<Fct c="18" el="73" l="54" n="searchCustomer()" t="F" v="prv">
+<Call c="32" i="DynamicUI" l="60" n="dynamicConstruct" t="F"/>
+<Call c="12" l="62" n="buildQuery" t="F"/>
+<Call c="18" l="63" n="viewCustomer" t="F"/>
+<Call c="18" l="64" n="closeCustomerCursor" t="F"/>
+</Fct>
+<Fct c="1" el="52" l="38" n="main()" t="F" v="pub">
+<Call c="11" l="46" n="searchCustomer" t="F"/>
+</Fct>
+</File>
+<File n="../DialogExamples (2)/Source/comboboxHelper.4gl" s="2" ts="20200128174821227">
+<Fct c="17" el="37" l="27" n="loadStoreCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+<Fct c="17" el="25" l="15" n="loadFactoryCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+<Fct c="17" el="13" l="3" n="loadStateCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+</File>
+<File n="inputex1/dailog_ex1.4gl" s="2" ts="20200128174821508">
+<Dep t="../DialogExamples (2)/Source/comboboxHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/inputFactory.4gl"/>
+<Fct c="10" el="346" l="333" n="inpupd_fun(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="330" l="306" n="load_fun()" t="F" v="pub"/>
+<Fct c="10" el="303" l="276" n="delete_check()" t="F" v="pub"/>
+<Fct c="10" el="274" l="260" n="delete_cust()" t="F" v="pub"/>
+<Fct c="17" el="255" l="183" n="inputorders(pMode INTEGER)" t="F" v="pub">
+<Call c="26" i="inputFactory" l="217" n="factoryList" t="F"/>
+</Fct>
+<Fct c="18" el="181" l="173" n="closeordersCursor()" t="F" v="prv"/>
+<Fct c="18" el="171" l="150" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="148" l="92" n="vieworders()" t="F" v="prv">
+<Call c="4" l="105" n="fetchRecord" t="F"/>
+<Call c="4" l="109" n="fetchRecord" t="F"/>
+<Call c="4" l="114" n="inputorders" t="F"/>
+<Call c="4" l="119" n="inputorders" t="F"/>
+<Call c="5" l="132" n="delete_check" t="F"/>
+<Call c="6" l="133" n="delete_cust" t="F"/>
+<Call c="6" l="138" n="load_fun" t="F"/>
+<Call c="6" l="140" n="inpupd_fun" t="F"/>
+</Fct>
+<Fct c="18" el="89" l="67" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="6" l="81" n="closeordersCursor" t="F"/>
+<Call c="6" l="84" n="closeordersCursor" t="F"/>
+</Fct>
+<Fct c="18" el="65" l="51" n="searchorders()" t="F" v="prv">
+<Call c="4" l="58" n="buildQuery" t="F"/>
+<Call c="6" l="59" n="vieworders" t="F"/>
+</Fct>
+<Fct c="1" el="49" l="39" n="main()" t="F" v="pub">
+<Call c="6" l="46" n="searchorders" t="F"/>
+</Fct>
+</File>
+<File n="items/items.4gl" s="2" ts="20200128180737640">
+<Dep t="../DialogExamples (2)/Source/comboboxHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/inputFactory.4gl"/>
+<Dep t="stock/input_stock.4gl"/>
+<Fct c="10" el="382" l="349" n="stock_function()" t="F" v="pub">
+<Call c="23" i="UIHelper" l="377" n="informationDialog" t="F"/>
+</Fct>
+<Fct c="10" el="346" l="341" n="inpupd_fun(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="338" l="317" n="load_fun()" t="F" v="pub"/>
+<Fct c="10" el="314" l="287" n="delete_check()" t="F" v="pub"/>
+<Fct c="10" el="285" l="270" n="delete_cust()" t="F" v="pub"/>
+<Fct c="17" el="264" l="192" n="inputorders(pMode INTEGER)" t="F" v="pub">
+<Call c="41" i="input_stock" l="228" n="stockList" t="F"/>
+</Fct>
+<Fct c="18" el="190" l="182" n="closeordersCursor()" t="F" v="prv"/>
+<Fct c="18" el="180" l="159" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="157" l="97" n="vieworders()" t="F" v="prv">
+<Call c="20" l="110" n="fetchRecord" t="F"/>
+<Call c="20" l="115" n="fetchRecord" t="F"/>
+<Call c="20" l="120" n="inputorders" t="F"/>
+<Call c="20" l="127" n="inputorders" t="F"/>
+<Call c="18" l="140" n="delete_check" t="F"/>
+<Call c="19" l="141" n="delete_cust" t="F"/>
+<Call c="23" l="147" n="load_fun" t="F"/>
+<Call c="28" l="149" n="inpupd_fun" t="F"/>
+</Fct>
+<Fct c="18" el="94" l="72" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="18" l="86" n="closeordersCursor" t="F"/>
+<Call c="14" l="89" n="closeordersCursor" t="F"/>
+</Fct>
+<Fct c="18" el="70" l="56" n="searchorders()" t="F" v="prv">
+<Call c="34" i="DyanamicLib" l="61" n="dynamicConstruct" t="F"/>
+<Call c="12" l="63" n="buildQuery" t="F"/>
+<Call c="18" l="64" n="vieworders" t="F"/>
+</Fct>
+<Fct c="1" el="53" l="43" n="main()" t="F" v="pub">
+<Call c="11" l="49" n="searchorders" t="F"/>
+</Fct>
+</File>
+<File n="../../Downloads/DialogEx/DialogExamples/Source/comboboxHelper.4gl" s="2" ts="20200128174821055">
+<Fct c="17" el="37" l="27" n="loadStoreCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+<Fct c="17" el="25" l="15" n="loadFactoryCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+<Fct c="17" el="13" l="3" n="loadStateCombo(pCombo ui.ComboBox)" t="F" v="pub"/>
+</File>
+<File n="../../Downloads/DialogEx/DialogExamples/Source/Dynamic.4gl" s="2" ts="20200128174821642">
+<Fct c="18" el="93" l="69" n="getWherePart(pDialog ui.Dialog,pFieldList DYNAMIC ARRAY OF RECORD)" t="F" v="prv"/>
+<Fct c="18" el="67" l="51" n="getRecordDefinition(pRecordNode om.DomNode)" t="F" v="prv"/>
+<Fct c="17" el="45" l="12" n="dynamicConstruct(pRecordNode om.DomNode)" t="F" v="pub">
+<Call c="22" l="17" n="getRecordDefinition" t="F"/>
+<Call c="12" l="43" n="getWherePart" t="F"/>
+</Fct>
+</File>
+<File n="../../Downloads/DialogEx/DialogExamples/Source/enums.4gl" s="2" ts="20200128174822079"/>
+<File n="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl" s="2" ts="20200128174821352">
+<Fct c="17" el="19" l="8" n="deleteConfirmation()" t="F" v="pub"/>
+<Fct c="17" el="6" l="1" n="informationDialog(pTitle STRING,pMessage STRING)" t="F" v="pub"/>
+</File>
+<File n="stock/input_stock.4gl" s="2" ts="20200128174821783">
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/UIHelper.4gl"/>
+<Dep t="../../Downloads/DialogEx/DialogExamples/Source/enums.4gl"/>
+<Fct c="17" el="284" l="250" n="stockList()" t="F" v="pub">
+<Call c="23" i="UIHelper" l="277" n="informationDialog" t="F"/>
+</Fct>
+<Fct c="17" el="248" l="183" n="inputstock(pMode INTEGER)" t="F" v="pub"/>
+<Fct c="18" el="181" l="129" n="viewstock()" t="F" v="prv">
+<Call c="20" l="142" n="fetchRecord" t="F"/>
+<Call c="20" l="146" n="fetchRecord" t="F"/>
+<Call c="20" l="150" n="fetchRecord" t="F"/>
+<Call c="20" l="154" n="fetchRecord" t="F"/>
+<Call c="20" l="158" n="inputstock" t="F"/>
+<Call c="24" l="159" n="fetchRecord" t="F"/>
+<Call c="20" l="164" n="inputstock" t="F"/>
+<Call c="24" l="165" n="fetchRecord" t="F"/>
+<Call c="29" i="UIHelper" l="170" n="deleteConfirmation" t="F"/>
+<Call c="24" l="172" n="fetchRecord" t="F"/>
+</Fct>
+<Fct c="18" el="127" l="89" n="fetchRecord(pFetchAction INTEGER)" t="F" v="prv"/>
+<Fct c="18" el="87" l="58" n="buildQuery(pWherePart STRING)" t="F" v="prv">
+<Call c="33" l="77" n="fetchRecord" t="F"/>
+</Fct>
+<Fct c="18" el="56" l="39" n="searchstock()" t="F" v="prv">
+<Call c="32" i="DynamicUI" l="44" n="dynamicConstruct" t="F"/>
+<Call c="12" l="46" n="buildQuery" t="F"/>
+<Call c="18" l="47" n="viewstock" t="F"/>
+</Fct>
+<Fct c="1" el="37" l="21" n="main()" t="F" v="pub">
+<Call c="11" l="31" n="searchstock" t="F"/>
+</Fct>
+</File>
+<File n="application_1/view.4gl" s="2" ts="20200128195248852">
+<Fct c="10" el="248" l="216" n="delete_cust(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="213" l="190" n="update_cust(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="187" l="163" n="insert_cust(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="160" l="134" n="store_num_ok(idx SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="130" l="70" n="inpupd_custall(idx SMALLINT)" t="F" v="pub">
+<Call c="9" l="95" n="insert_cust" t="F"/>
+<Call c="13" l="98" n="delete_cust" t="F"/>
+<Call c="12" l="104" n="update_cust" t="F"/>
+<Call c="14" l="116" n="store_num_ok" t="F"/>
+</Fct>
+<Fct c="10" el="67" l="34" n="load_custall()" t="F" v="pub"/>
+</File>
+</WorkspaceDatabase>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="input_dialog" build="3.20.07" sqlDbName="mydb" width="75" height="7">
+  <Grid width="75" height="7">
+    <Group text="Customer Information" posY="0" posX="0" gridWidth="75" gridHeight="8">
+      <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+        <Label width="36" color="blue" style=" " posY="1" posX="1" gridWidth="36"/>
+      </FormField>
+      <Label text="         id:" posY="2" posX="1" gridWidth="14"/>
+      <FormField name="test.id" colName="id" sqlType="INTEGER" fieldId="1" sqlTabName="test" tabIndex="2">
+        <Edit width="20" comment="Enter store number" posY="2" posX="17" gridWidth="20"/>
+      </FormField>
+      <Label text="      fname:" posY="3" posX="1" gridWidth="14"/>
+      <FormField name="test.fname" colName="fname" sqlType="CHAR(20)" fieldId="2" sqlTabName="test" notNull="1" required="1" tabIndex="3">
+        <Edit width="20" comment="Enter store name " posY="3" posX="17" gridWidth="20"/>
+      </FormField>
+      <Label text="  lname:" posY="3" posX="39" gridWidth="10"/>
+      <FormField name="test.lname" colName="lname" sqlType="CHAR(10)" fieldId="3" sqlTabName="test" tabIndex="4">
+        <Edit width="20" comment="Enter address line 1 " posY="3" posX="51" gridWidth="20"/>
+      </FormField>
+      <Label text="      state:" posY="4" posX="1" gridWidth="14"/>
+      <FormField name="test.state" colName="state" sqlType="CHAR(15)" fieldId="4" sqlTabName="test" tabIndex="5">
+        <ComboBox width="18" initializer="loadstatecombo" comment="Select state " posY="4" posX="17" gridWidth="20"/>
+      </FormField>
+      <Label text="    zipcode:" posY="5" posX="1" gridWidth="14"/>
+      <FormField name="test.zipcode" colName="zipcode" sqlType="INTEGER" fieldId="5" sqlTabName="test" tabIndex="6">
+        <ButtonEdit width="18" action="zoom" image="mag" comment="Enter zip code " posY="5" posX="17" gridWidth="20"/>
+      </FormField>
+    </Group>
+  </Grid>
+  <RecordView tabName="test">
+    <Link colName="id" fieldIdRef="1"/>
+    <Link colName="fname" fieldIdRef="2"/>
+    <Link colName="lname" fieldIdRef="3"/>
+    <Link colName="state" fieldIdRef="4"/>
+    <Link colName="zipcode" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="s_customer">
+    <Link colName="id" fieldIdRef="1"/>
+    <Link colName="fname" fieldIdRef="2"/>
+    <Link colName="lname" fieldIdRef="3"/>
+    <Link colName="state" fieldIdRef="4"/>
+    <Link colName="zipcode" fieldIdRef="5"/>
+  </RecordView>
+</Form>

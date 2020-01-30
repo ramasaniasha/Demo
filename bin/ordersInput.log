@@ -1,0 +1,112 @@
+Date: 01/24/2020    Time: 12:12:59
+Program error at 'dailog_ex2.4gl', line number 54.
+FORMS statement error number -1102.
+Field (formonly.mode_label) not found in form.
+Date: 01/24/2020    Time: 12:12:59
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 searchorders() at dailog_ex2.4gl:54
+#2 main() at dailog_ex2.4gl:41
+
+Date: 01/24/2020    Time: 12:12:59
+Program error at 'DynamicUI.4gl', line number 46.
+FORMS statement error number -1102.
+Field (order_num) not found in form.
+Date: 01/27/2020    Time: 11:54:19
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (ordersInput) not found.
+Date: 01/27/2020    Time: 11:54:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 11:54:19
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:54:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:54:19
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:54:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:54:19
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 11:54:19
+#0 errorHandler() at ex1.4gl:261
+#1 searchorders() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+
+Date: 01/27/2020    Time: 11:54:37
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (ordersInput) not found.
+Date: 01/27/2020    Time: 11:54:37
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 11:54:37
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:54:37
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:54:37
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:54:37
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:54:37
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 11:54:37
+#0 errorHandler() at ex1.4gl:261
+#1 searchorders() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+
+Date: 01/27/2020    Time: 11:55:54
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (ordersInput) not found.
+Date: 01/27/2020    Time: 11:55:54
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 11:55:54
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:55:54
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:55:54
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:55:54
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:55:54
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 11:55:54
+#0 errorHandler() at ex1.4gl:261
+#1 searchorders() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+

@@ -1,0 +1,20 @@
+Date: 01/23/2020    Time: 18:36:50
+Program error at 'dailog_ex1.4gl', line number 17.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/23/2020    Time: 18:36:50
+#0 errorHandler() at dailog_ex1.4gl:107
+#1 main() at dailog_ex1.4gl:17
+
+Date: 01/23/2020    Time: 18:36:59
+Program error at 'dailog_ex1.4gl', line number 19.
+FORMS statement error number -1110.
+Form file (state) not found.
+Date: 01/23/2020    Time: 18:36:59
+#0 errorHandler() at dailog_ex1.4gl:107
+#1 main() at dailog_ex1.4gl:19
+
+Date: 01/23/2020    Time: 18:37:01
+Program error at 'dailog_ex1.4gl', line number 32.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="stock" build="3.20.07" sqlDbName="mydb" width="44" height="9">
+  <Grid width="44" height="9">
+    <Group text="Stock Information" posY="0" posX="0" gridWidth="44" gridHeight="10">
+      <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+        <Label width="41" color="blue" posY="1" posX="1" gridWidth="41"/>
+      </FormField>
+      <Label text="Stock Number:     " posY="2" posX="1" gridWidth="20"/>
+      <FormField name="stock.stock_num" colName="stock_num" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="stock" tabIndex="2">
+        <Edit width="7" comment="Enter stock number" posY="2" posX="23" gridWidth="7"/>
+      </FormField>
+      <Label text="Factory Code:     " posY="3" posX="1" gridWidth="20"/>
+      <FormField name="stock.fac_code" colName="fac_code" sqlType="CHAR(3)" required="1" notNull="1" fieldId="2" sqlTabName="stock" tabIndex="3">
+        <ButtonEdit width="5" action="zoom" image="mag" comment="Enter or select a factory" posY="3" posX="23" gridWidth="7"/>
+      </FormField>
+      <Label text="Description:      " posY="4" posX="1" gridWidth="20"/>
+      <FormField name="stock.description" colName="description" sqlType="CHAR(15)" fieldId="3" sqlTabName="stock" tabIndex="4">
+        <Edit width="18" comment="Enter a stock description" posY="4" posX="23" gridWidth="18"/>
+      </FormField>
+      <Label text="Regular Price:    " posY="5" posX="1" gridWidth="20"/>
+      <FormField name="stock.reg_price" colName="reg_price" sqlType="DECIMAL(8,2)" fieldId="4" sqlTabName="stock" tabIndex="5">
+        <Edit width="14" comment="Enter regular price" posY="5" posX="23" gridWidth="14"/>
+      </FormField>
+      <Label text="Promotional Price:" posY="6" posX="1" gridWidth="20"/>
+      <FormField name="stock.promo_price" colName="promo_price" sqlType="DECIMAL(8,2)" fieldId="5" sqlTabName="stock" tabIndex="6">
+        <Edit width="14" comment="Enter promotional price" posY="6" posX="23" gridWidth="14"/>
+      </FormField>
+      <Label text="Price Update Date:" posY="7" posX="1" gridWidth="20"/>
+      <FormField name="stock.price_updated" colName="price_updated" sqlType="DATE" fieldId="6" sqlTabName="stock" tabIndex="7">
+        <DateEdit width="10" comment="Enter the price updated date" posY="7" posX="23" gridWidth="12"/>
+      </FormField>
+      <Label text="Unit:             " posY="8" posX="1" gridWidth="20"/>
+      <FormField name="stock.unit" colName="unit" sqlType="CHAR(4)" fieldId="7" sqlTabName="stock" tabIndex="8">
+        <Edit width="6" comment="Enter unit" posY="8" posX="23" gridWidth="6"/>
+      </FormField>
+    </Group>
+  </Grid>
+  <RecordView tabName="stock">
+    <Link colName="stock_num" fieldIdRef="1"/>
+    <Link colName="fac_code" fieldIdRef="2"/>
+    <Link colName="description" fieldIdRef="3"/>
+    <Link colName="reg_price" fieldIdRef="4"/>
+    <Link colName="promo_price" fieldIdRef="5"/>
+    <Link colName="price_updated" fieldIdRef="6"/>
+    <Link colName="unit" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="s_stock">
+    <Link colName="stock_num" fieldIdRef="1"/>
+    <Link colName="fac_code" fieldIdRef="2"/>
+    <Link colName="description" fieldIdRef="3"/>
+    <Link colName="reg_price" fieldIdRef="4"/>
+    <Link colName="promo_price" fieldIdRef="5"/>
+    <Link colName="price_updated" fieldIdRef="6"/>
+    <Link colName="unit" fieldIdRef="7"/>
+  </RecordView>
+</Form>

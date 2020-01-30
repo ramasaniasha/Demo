@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="dailog" build="3.20.07" sqlDbName="mydb" width="84" height="29">
+  <VBox>
+    <Grid width="57" height="12">
+      <Group text="Search Criteria" posY="0" posX="0" gridWidth="57" gridHeight="13">
+        <Label text="  Store Number:" posY="1" posX="1" gridWidth="17"/>
+        <FormField name="customer.store_num" colName="store_num" sqlType="INTEGER" required="1" notNull="1" fieldId="0" sqlTabName="customer" tabIndex="1">
+          <Edit width="20" comment="Enter store number for search" posY="1" posX="20" gridWidth="20"/>
+        </FormField>
+        <Label text="    Store Name:" posY="2" posX="1" gridWidth="17"/>
+        <FormField name="customer.store_name" colName="store_name" sqlType="CHAR(30)" fieldId="1" sqlTabName="customer" tabIndex="2">
+          <Edit width="33" comment="Enter store name for search" posY="2" posX="20" gridWidth="33"/>
+        </FormField>
+        <Label text="     Address 1:" posY="3" posX="1" gridWidth="17"/>
+        <FormField name="customer.addr" colName="addr" sqlType="CHAR(20)" fieldId="2" sqlTabName="customer" tabIndex="3">
+          <Edit width="20" comment="Enter address line 1 for search" posY="3" posX="20" gridWidth="20"/>
+        </FormField>
+        <Label text="     Address 2:" posY="4" posX="1" gridWidth="17"/>
+        <FormField name="customer.addr2" colName="addr2" sqlType="CHAR(20)" fieldId="3" sqlTabName="customer" tabIndex="4">
+          <Edit width="20" comment="Enter address line 2 for search" posY="4" posX="20" gridWidth="20"/>
+        </FormField>
+        <Label text="          City:" posY="5" posX="1" gridWidth="17"/>
+        <FormField name="customer.city" colName="city" sqlType="CHAR(15)" fieldId="4" sqlTabName="customer" tabIndex="5">
+          <Edit width="15" comment="Enter city for search" posY="5" posX="20" gridWidth="15"/>
+        </FormField>
+        <Label text="         State:" posY="6" posX="1" gridWidth="17"/>
+        <FormField name="customer.state" colName="state" sqlType="CHAR(2)" fieldId="5" sqlTabName="customer" tabIndex="6">
+          <ComboBox width="18" initializer="loadstatecombo" queryEditable="1" comment="Select state for search" posY="6" posX="20" gridWidth="20"/>
+        </FormField>
+        <Label text="      Zip Code:" posY="7" posX="1" gridWidth="17"/>
+        <FormField name="customer.zipcode" colName="zipcode" sqlType="CHAR(5)" fieldId="6" sqlTabName="customer" tabIndex="7">
+          <Edit width="7" comment="Enter zip code for search" posY="7" posX="20" gridWidth="7"/>
+        </FormField>
+        <Label text="  Contact Name:" posY="8" posX="1" gridWidth="17"/>
+        <FormField name="customer.contact_name" colName="contact_name" sqlType="CHAR(30)" fieldId="7" sqlTabName="customer" tabIndex="8">
+          <Edit width="33" comment="Enter contact name for search" posY="8" posX="20" gridWidth="33"/>
+        </FormField>
+        <Label text="         Phone:" posY="9" posX="1" gridWidth="17"/>
+        <FormField name="customer.phone" colName="phone" sqlType="CHAR(18)" fieldId="8" sqlTabName="customer" tabIndex="9">
+          <Edit width="19" comment="Enter phone number for search" posY="9" posX="20" gridWidth="19"/>
+        </FormField>
+        <Button name="clear" width="5" text="clear" posY="11" posX="22" gridWidth="5" tabIndex="10"/>
+        <Button name="do_search" width="8" text="Find" posY="11" posX="31" gridWidth="8" tabIndex="11"/>
+      </Group>
+    </Grid>
+    <Group text="Query Text">
+      <Grid width="56" height="8">
+        <FormField name="formonly.sql_query" colName="sql_query" fieldId="9" sqlTabName="formonly" tabIndex="12">
+          <TextEdit width="54" height="8" wantReturns="1" scroll="1" posY="0" posX="1" gridWidth="54" gridHeight="8"/>
+        </FormField>
+      </Grid>
+    </Group>
+    <Table pageSize="8" doubleClick="dc_action" tabName="d_customer">
+      <PhantomColumn name="formonly.t_store_num" colName="t_store_num" sqlType="INTEGER" required="1" notNull="1" fieldId="10" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn text="Store Name" name="formonly.t_store_name" colName="t_store_name" sqlType="CHAR(30)" fieldId="11" sqlTabName="formonly" tabIndex="13">
+        <Edit width="16" scroll="1"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.t_addr" colName="t_addr" sqlType="CHAR(20)" fieldId="12" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.t_addr2" colName="t_addr2" sqlType="CHAR(20)" fieldId="13" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn text="City" name="formonly.t_city" colName="t_city" sqlType="CHAR(15)" fieldId="14" sqlTabName="formonly" tabIndex="14">
+        <Edit width="17" scroll="1"/>
+      </TableColumn>
+      <TableColumn text="State" name="formonly.t_state" colName="t_state" sqlType="CHAR(2)" fieldId="15" sqlTabName="formonly" tabIndex="15">
+        <ComboBox width="17" initializer="loadstatecombo"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.t_zipcode" colName="t_zipcode" sqlType="CHAR(5)" fieldId="16" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn text="Contact Name" name="formonly.t_contact_name" colName="t_contact_name" sqlType="CHAR(30)" fieldId="17" sqlTabName="formonly" tabIndex="16">
+        <Edit width="24"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.t_phone" colName="t_phone" sqlType="CHAR(18)" fieldId="18" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+  </VBox>
+  <RecordView tabName="customer">
+    <Link colName="store_num" fieldIdRef="0"/>
+    <Link colName="store_name" fieldIdRef="1"/>
+    <Link colName="addr" fieldIdRef="2"/>
+    <Link colName="addr2" fieldIdRef="3"/>
+    <Link colName="city" fieldIdRef="4"/>
+    <Link colName="state" fieldIdRef="5"/>
+    <Link colName="zipcode" fieldIdRef="6"/>
+    <Link colName="contact_name" fieldIdRef="7"/>
+    <Link colName="phone" fieldIdRef="8"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="sql_query" fieldIdRef="9"/>
+    <Link colName="t_store_num" fieldIdRef="10"/>
+    <Link colName="t_store_name" fieldIdRef="11"/>
+    <Link colName="t_addr" fieldIdRef="12"/>
+    <Link colName="t_addr2" fieldIdRef="13"/>
+    <Link colName="t_city" fieldIdRef="14"/>
+    <Link colName="t_state" fieldIdRef="15"/>
+    <Link colName="t_zipcode" fieldIdRef="16"/>
+    <Link colName="t_contact_name" fieldIdRef="17"/>
+    <Link colName="t_phone" fieldIdRef="18"/>
+  </RecordView>
+  <RecordView tabName="s_customer">
+    <Link colName="store_num" fieldIdRef="0"/>
+    <Link colName="store_name" fieldIdRef="1"/>
+    <Link colName="addr" fieldIdRef="2"/>
+    <Link colName="addr2" fieldIdRef="3"/>
+    <Link colName="city" fieldIdRef="4"/>
+    <Link colName="state" fieldIdRef="5"/>
+    <Link colName="zipcode" fieldIdRef="6"/>
+    <Link colName="contact_name" fieldIdRef="7"/>
+    <Link colName="phone" fieldIdRef="8"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="display.tmp" build="3.20.07" sqlDbName="mydb" text="Form" width="35" height="10">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="35" height="10">
+    <FormField name="customer.store_name" colName="store_name" sqlType="CHAR(30)" fieldId="0" sqlTabName="customer" tabIndex="1">
+      <Edit width="14" posY="1" posX="3" gridWidth="14"/>
+    </FormField>
+    <FormField name="customer.phone" colName="phone" sqlType="CHAR(18)" fieldId="1" sqlTabName="customer" tabIndex="2">
+      <Edit width="15" posY="1" posX="19" gridWidth="15"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="customer">
+    <Link colName="store_name" fieldIdRef="0"/>
+    <Link colName="phone" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="rec">
+    <Link colName="store_name" fieldIdRef="0"/>
+    <Link colName="phone" fieldIdRef="1"/>
+  </RecordView>
+</Form>

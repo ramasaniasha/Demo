@@ -1,0 +1,114 @@
+SCHEMA mydb
+LAYOUT
+    VBOX
+        GRID
+
+{
+<G "Search Criteria"                                    >
+["  Store Number:"][fld001              ]
+["    Store Name:"][fld002                           ]
+["     Address 1:"][fld003              ]
+["     Address 2:"][fld004              ]
+["          City:"][fld005         ]
+["         State:"][fld006              ]
+["      Zip Code:"][fld007 ]
+["  Contact Name:"][fld008                           ]
+["         Phone:"][fld009             ]
+
+                     [cc   ]  [btn001  ]
+}
+        END --GRID
+        GROUP(TEXT="Query Text")
+          GRID
+{
+[txt001                                                ]
+[                                                      ]
+[                                                      ]
+[                                                      ]
+[                                                      ]
+[                                                      ]
+[                                                      ]
+[                                                      ]
+}
+            END --GRID
+        END --GROUP
+        TABLE(DOUBLECLICK=dc_action)
+{
+ Store Name        City               State                Contact Name
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+[c001            ][c002             ][c003               ][c004                    ]
+}
+
+        END --TABLE
+
+    END --VBOX
+END --LAYOUT
+
+TABLES
+    customer
+END --TABLES
+
+ATTRIBUTES
+
+    --Search Fields grid
+    EDIT fld001 = customer.store_num, COMMENT="Enter store number for search";
+    EDIT fld002 = customer.store_name, COMMENT="Enter store name for search";
+    EDIT fld003 = customer.addr, COMMENT="Enter address line 1 for search";
+    EDIT fld004 = customer.addr2, COMMENT="Enter address line 2 for search";
+    EDIT fld005 = customer.city, COMMENT="Enter city for search";
+    COMBOBOX fld006 = customer.state, INITIALIZER=loadStateCombo,
+                      QUERYEDITABLE,
+                      COMMENT="Select state for search";
+    EDIT fld007 = customer.zipcode, COMMENT="Enter zip code for search";
+    EDIT fld008 = customer.contact_name, COMMENT="Enter contact name for search";
+    EDIT fld009 = customer.phone, COMMENT="Enter phone number for search";
+
+    --Search Button
+    BUTTON btn001: do_search, TEXT="Find";
+    BUTTON cc: clear, TEXT="clear";
+    --Display SQL Text
+    TEXTEDIT txt001 = formonly.sql_query;
+    --Table Fields
+    PHANTOM formonly.t_store_num TYPE LIKE customer.store_num;
+    EDIT c001 = formonly.t_store_name TYPE LIKE customer.store_name, SCROLL;
+    PHANTOM formonly.t_addr TYPE LIKE customer.addr;
+    PHANTOM formonly.t_addr2 TYPE LIKE customer.addr2;
+    EDIT c002 = formonly.t_city TYPE LIKE customer.city, SCROLL;
+    COMBOBOX c003 = formonly.t_state TYPE LIKE customer.state, 
+                    INITIALIZER=loadStateCombo;
+    PHANTOM formonly.t_zipcode TYPE LIKE customer.zipcode;
+    EDIT c004 = formonly.t_contact_name TYPE LIKE customer.contact_name;
+    PHANTOM formonly.t_phone TYPE LIKE customer.phone;
+
+END --ATTRIBUTES
+
+INSTRUCTIONS
+
+    SCREEN RECORD s_customer (customer.store_num,
+                              customer.store_name,
+                              customer.addr,
+                              customer.addr2,
+                              customer.city,
+                              customer.state,
+                              customer.zipcode,
+                              customer.contact_name,
+                              customer.phone);
+
+    SCREEN RECORD d_customer (formonly.t_store_num,
+                              formonly.t_store_name,
+                              formonly.t_addr,
+                              formonly.t_addr2,
+                              formonly.t_city,
+                              formonly.t_state,
+                              formonly.t_zipcode,
+                              formonly.t_contact_name,
+                              formonly.t_phone);
+
+END --INSTRUCTIONS
+

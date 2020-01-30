@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="table" build="3.20.07" sqlDbName="mydb" width="141" height="7">
+  <Grid>
+    <Table gridWidth="141" gridHeight="7" pageSize="6" tabName="sa_cust">
+      <TableColumn text="Id" name="customer.store_num" colName="store_num" sqlType="INTEGER" required="1" notNull="1" fieldId="0" sqlTabName="customer" tabIndex="1" numAlign="1">
+        <Edit width="3"/>
+      </TableColumn>
+      <TableColumn text="Name" name="customer.store_name" colName="store_name" sqlType="CHAR(30)" fieldId="1" sqlTabName="customer" required="1" tabIndex="2">
+        <Edit width="21"/>
+      </TableColumn>
+      <TableColumn text="Address" name="customer.addr" colName="addr" sqlType="CHAR(20)" fieldId="2" sqlTabName="customer" tabIndex="3">
+        <Edit width="19"/>
+      </TableColumn>
+      <TableColumn name="customer.addr2" colName="addr2" sqlType="CHAR(20)" fieldId="3" sqlTabName="customer" tabIndex="4">
+        <Edit width="20"/>
+      </TableColumn>
+      <TableColumn text="City" name="customer.city" colName="city" sqlType="CHAR(15)" fieldId="4" sqlTabName="customer" tabIndex="5">
+        <Edit width="15"/>
+      </TableColumn>
+      <TableColumn text="State" name="customer.state" colName="state" sqlType="CHAR(2)" fieldId="5" sqlTabName="customer" tabIndex="6">
+        <ComboBox width="4">
+          <Item name="IA" text="IA"/>
+          <Item name="IL" text="IL"/>
+          <Item name="WI" text="WI"/>
+        </ComboBox>
+      </TableColumn>
+      <TableColumn text="Zipcode" name="customer.zipcode" colName="zipcode" sqlType="CHAR(5)" fieldId="6" sqlTabName="customer" tabIndex="7">
+        <Edit width="12"/>
+      </TableColumn>
+      <TableColumn text="Contact" name="customer.contact_name" colName="contact_name" sqlType="CHAR(30)" fieldId="7" sqlTabName="customer" tabIndex="8">
+        <Edit width="15"/>
+      </TableColumn>
+      <TableColumn text="Phone" name="customer.phone" colName="phone" sqlType="CHAR(18)" fieldId="8" sqlTabName="customer" tabIndex="9">
+        <Edit width="12"/>
+      </TableColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="customer">
+    <Link colName="store_num" fieldIdRef="0"/>
+    <Link colName="store_name" fieldIdRef="1"/>
+    <Link colName="addr" fieldIdRef="2"/>
+    <Link colName="addr2" fieldIdRef="3"/>
+    <Link colName="city" fieldIdRef="4"/>
+    <Link colName="state" fieldIdRef="5"/>
+    <Link colName="zipcode" fieldIdRef="6"/>
+    <Link colName="contact_name" fieldIdRef="7"/>
+    <Link colName="phone" fieldIdRef="8"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="factory" build="3.20.07" sqlDbName="mydb" width="39" height="4">
+  <Grid width="39" height="4">
+    <Group text="Factory Information" posY="0" posX="0" gridWidth="39" gridHeight="5">
+      <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+        <Label width="36" color="blue" posY="1" posX="1" gridWidth="36"/>
+      </FormField>
+      <Label text="Factory Code: " posY="2" posX="1" gridWidth="16"/>
+      <FormField name="factory.fac_code" colName="fac_code" sqlType="CHAR(3)" required="1" notNull="1" fieldId="1" sqlTabName="factory" tabIndex="2">
+        <Edit width="6" comment="Enter factory code" posY="2" posX="19" gridWidth="6"/>
+      </FormField>
+      <Label text="Factory Name: " posY="3" posX="1" gridWidth="16"/>
+      <FormField name="factory.fac_name" colName="fac_name" sqlType="CHAR(15)" fieldId="2" sqlTabName="factory" tabIndex="3">
+        <Edit width="15" comment="Enter factory name" posY="3" posX="19" gridWidth="15"/>
+      </FormField>
+    </Group>
+  </Grid>
+  <RecordView tabName="factory">
+    <Link colName="fac_code" fieldIdRef="1"/>
+    <Link colName="fac_name" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="s_factory">
+    <Link colName="fac_code" fieldIdRef="1"/>
+    <Link colName="fac_name" fieldIdRef="2"/>
+  </RecordView>
+</Form>

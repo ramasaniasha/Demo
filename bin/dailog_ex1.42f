@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="dailog_ex1" build="3.20.07" sqlDbName="mydb" width="62" height="7">
+  <Grid width="62" height="7">
+    <Group text="Customer Information" posY="0" posX="0" gridWidth="62" gridHeight="8">
+      <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+        <Label width="60" color="blue" style="psModeLabel" posY="1" posX="1" gridWidth="60"/>
+      </FormField>
+      <Label text=" order_num:" posY="2" posX="1" gridWidth="13"/>
+      <FormField name="orders.order_num" colName="order_num" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="orders" tabIndex="2">
+        <Edit width="20" comment="Enter order number" posY="2" posX="16" gridWidth="20"/>
+      </FormField>
+      <Label text="order_date:" posY="3" posX="1" gridWidth="13"/>
+      <FormField name="orders.order_date" colName="order_date" sqlType="DATE" fieldId="2" sqlTabName="orders" notNull="1" required="1" tabIndex="3">
+        <DateEdit width="18" comment="Enter order date" posY="3" posX="16" gridWidth="20"/>
+      </FormField>
+      <Label text=" store_num:" posY="4" posX="1" gridWidth="13"/>
+      <FormField name="orders.store_num" colName="store_num" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="orders" tabIndex="4">
+        <Edit width="13" comment="Enter store number " posY="4" posX="16" gridWidth="13"/>
+      </FormField>
+      <Label text=" fac_code:" posY="4" posX="31" gridWidth="12"/>
+      <FormField name="orders.fac_code" colName="fac_code" sqlType="CHAR(3)" fieldId="4" sqlTabName="orders" tabIndex="5">
+        <Edit width="14" comment="Enter factory code " posY="4" posX="45" gridWidth="14"/>
+      </FormField>
+      <Label text="ship_instr:" posY="5" posX="1" gridWidth="13"/>
+      <FormField name="orders.ship_instr" colName="ship_instr" sqlType="CHAR(10)" fieldId="5" sqlTabName="orders" tabIndex="6">
+        <Edit width="18" comment="Enter shippint instructions " posY="5" posX="16" gridWidth="18"/>
+      </FormField>
+      <Label text="     promo:" posY="6" posX="1" gridWidth="13"/>
+      <FormField name="orders.promo" colName="promo" sqlType="CHAR(1)" fieldId="6" sqlTabName="orders" tabIndex="7">
+        <Edit width="20" comment="Enter promo" posY="6" posX="16" gridWidth="20"/>
+      </FormField>
+    </Group>
+  </Grid>
+  <RecordView tabName="orders">
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="order_date" fieldIdRef="2"/>
+    <Link colName="store_num" fieldIdRef="3"/>
+    <Link colName="fac_code" fieldIdRef="4"/>
+    <Link colName="ship_instr" fieldIdRef="5"/>
+    <Link colName="promo" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="scr">
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="order_date" fieldIdRef="2"/>
+    <Link colName="store_num" fieldIdRef="3"/>
+    <Link colName="fac_code" fieldIdRef="4"/>
+    <Link colName="ship_instr" fieldIdRef="5"/>
+    <Link colName="promo" fieldIdRef="6"/>
+  </RecordView>
+</Form>

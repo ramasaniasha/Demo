@@ -1,0 +1,379 @@
+Date: 01/22/2020    Time: 13:36:29
+Program error at 'input_dialog.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/22/2020    Time: 13:36:29
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:35
+
+Date: 01/22/2020    Time: 13:36:30
+Program error at 'input_dialog.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/22/2020    Time: 13:36:30
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:37
+
+Date: 01/22/2020    Time: 13:36:30
+Program error at 'input_dialog.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/22/2020    Time: 13:36:30
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:39
+
+Date: 01/22/2020    Time: 13:36:30
+Program error at 'input_dialog.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/22/2020    Time: 13:36:30
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:39
+
+Date: 01/22/2020    Time: 13:36:30
+Program error at 'input_dialog.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/22/2020    Time: 13:36:30
+#0 errorHandler() at input_dialog.4gl:261
+#1 searchCustomer() at input_dialog.4gl:54
+#2 main() at input_dialog.4gl:41
+
+Date: 01/22/2020    Time: 13:36:56
+Program error at 'input_dialog.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/22/2020    Time: 13:36:56
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:35
+
+Date: 01/22/2020    Time: 13:36:57
+Program error at 'input_dialog.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/22/2020    Time: 13:36:57
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:37
+
+Date: 01/22/2020    Time: 13:36:57
+Program error at 'input_dialog.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/22/2020    Time: 13:36:57
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:39
+
+Date: 01/22/2020    Time: 13:36:57
+Program error at 'input_dialog.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/22/2020    Time: 13:36:57
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:39
+
+Date: 01/22/2020    Time: 13:36:57
+Program error at 'input_dialog.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/22/2020    Time: 13:36:57
+#0 errorHandler() at input_dialog.4gl:261
+#1 searchCustomer() at input_dialog.4gl:54
+#2 main() at input_dialog.4gl:41
+
+Date: 01/22/2020    Time: 13:37:53
+Program error at 'input_dialog.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/22/2020    Time: 13:37:53
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:35
+
+Date: 01/22/2020    Time: 13:37:53
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/22/2020    Time: 13:39:18
+Program error at 'input_dialog.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/22/2020    Time: 13:39:18
+#0 errorHandler() at input_dialog.4gl:261
+#1 main() at input_dialog.4gl:35
+
+Date: 01/22/2020    Time: 13:39:18
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/24/2020    Time: 12:10:10
+Program error at 'dailog_ex2.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/24/2020    Time: 12:10:10
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:35
+
+Date: 01/24/2020    Time: 12:10:10
+Program error at 'dailog_ex2.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/24/2020    Time: 12:10:10
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:37
+
+Date: 01/24/2020    Time: 12:10:10
+Program error at 'dailog_ex2.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/24/2020    Time: 12:10:10
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:39
+
+Date: 01/24/2020    Time: 12:10:10
+Program error at 'dailog_ex2.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/24/2020    Time: 12:10:10
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:39
+
+Date: 01/24/2020    Time: 12:10:10
+Program error at 'dailog_ex2.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/24/2020    Time: 12:10:10
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 searchCustomer() at dailog_ex2.4gl:54
+#2 main() at dailog_ex2.4gl:41
+
+Date: 01/24/2020    Time: 12:10:28
+Program error at 'dailog_ex2.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/24/2020    Time: 12:10:28
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:35
+
+Date: 01/24/2020    Time: 12:10:28
+Program error at 'dailog_ex2.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/24/2020    Time: 12:10:28
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:37
+
+Date: 01/24/2020    Time: 12:10:28
+Program error at 'dailog_ex2.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/24/2020    Time: 12:10:28
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:39
+
+Date: 01/24/2020    Time: 12:10:28
+Program error at 'dailog_ex2.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/24/2020    Time: 12:10:28
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 main() at dailog_ex2.4gl:39
+
+Date: 01/24/2020    Time: 12:10:28
+Program error at 'dailog_ex2.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/24/2020    Time: 12:10:28
+#0 errorHandler() at dailog_ex2.4gl:261
+#1 searchCustomer() at dailog_ex2.4gl:54
+#2 main() at dailog_ex2.4gl:41
+
+Date: 01/27/2020    Time: 11:59:16
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 11:59:16
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 11:59:16
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/27/2020    Time: 11:59:16
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 11:59:16
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:59:16
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:59:16
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:59:16
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:59:16
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 11:59:16
+#0 errorHandler() at ex1.4gl:261
+#1 searchCustomer() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+
+Date: 01/27/2020    Time: 11:59:25
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 11:59:25
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 11:59:25
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/27/2020    Time: 11:59:25
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 11:59:25
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:59:25
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:59:25
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 11:59:25
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 11:59:25
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 11:59:25
+#0 errorHandler() at ex1.4gl:261
+#1 searchCustomer() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+
+Date: 01/27/2020    Time: 12:00:18
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:00:18
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:00:19
+Program error at 'ex1.4gl', line number 37.
+FORMS statement error number -1110.
+Form file (customerInput) not found.
+Date: 01/27/2020    Time: 12:00:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:37
+
+Date: 01/27/2020    Time: 12:00:19
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 12:00:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 12:00:19
+Program error at 'ex1.4gl', line number 39.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 12:00:19
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:39
+
+Date: 01/27/2020    Time: 12:00:19
+Program error at 'ex1.4gl', line number 54.
+FORMS statement error number -1114.
+No form has been displayed.
+Date: 01/27/2020    Time: 12:00:19
+#0 errorHandler() at ex1.4gl:261
+#1 searchCustomer() at ex1.4gl:54
+#2 main() at ex1.4gl:41
+
+Date: 01/27/2020    Time: 12:01:15
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:01:15
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:01:15
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:01:52
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:01:52
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:01:52
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:02:49
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:02:49
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:02:49
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:04:10
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:04:10
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:04:10
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:05:43
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:05:43
+#0 errorHandler() at ex1.4gl:261
+#1 main() at ex1.4gl:35
+
+Date: 01/27/2020    Time: 12:05:43
+Program error at 'comboboxHelper.4gl', line number 8.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 12:07:10
+Program error at 'ex1.4gl', line number 33.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 13:06:08
+Program error at 'ex1.4gl', line number 35.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.

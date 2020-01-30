@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="items_input" build="3.20.07" sqlDbName="mydb" width="62" height="5">
+  <Grid width="62" height="5">
+    <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="57" posY="0" posX="4" gridWidth="57"/>
+    </FormField>
+    <Label text="order_num #:" posY="1" posX="3" gridWidth="12"/>
+    <FormField name="formonly.order_num" colName="order_num" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <Edit width="5" posY="1" posX="16" gridWidth="5"/>
+    </FormField>
+    <Label text="stock_num:" posY="1" posX="23" gridWidth="10"/>
+    <FormField name="formonly.stock_num" colName="stock_num" fieldId="2" sqlTabName="formonly" tabIndex="3">
+      <ButtonEdit width="18" action="zoom1" image="mag" comment="Enter or select a factory" posY="1" posX="34" gridWidth="20"/>
+    </FormField>
+    <Label text="quantity:" posY="2" posX="3" gridWidth="9"/>
+    <FormField name="formonly.quantity" colName="quantity" fieldId="3" sqlTabName="formonly" tabIndex="4">
+      <Edit width="20" posY="2" posX="13" gridWidth="20"/>
+    </FormField>
+    <Label text="price" posY="3" posX="3" gridWidth="5"/>
+    <Label text=":" posY="3" posX="11" gridWidth="1"/>
+    <FormField name="formonly.price" colName="price" fieldId="4" sqlTabName="formonly" tabIndex="5">
+      <Edit width="20" posY="3" posX="13" gridWidth="20"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="stock_num" fieldIdRef="2"/>
+    <Link colName="quantity" fieldIdRef="3"/>
+    <Link colName="price" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="s_order">
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="stock_num" fieldIdRef="2"/>
+    <Link colName="quantity" fieldIdRef="3"/>
+    <Link colName="price" fieldIdRef="4"/>
+  </RecordView>
+</Form>

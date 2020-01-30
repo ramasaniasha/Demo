@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="items" build="3.20.07" sqlDbName="mydb" width="87" height="5">
+  <Grid width="87" height="5">
+    <Table pageSize="1" width="87" posY="1" posX="0" gridWidth="87" gridHeight="4" tabName="s_items">
+      <TableColumn text="order_num" name="formonly.order_num" colName="order_num" fieldId="0" sqlTabName="formonly" tabIndex="1">
+        <Edit width="17"/>
+      </TableColumn>
+      <TableColumn text="stock_num" name="formonly.stock_num" colName="stock_num" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <Edit width="14"/>
+      </TableColumn>
+      <TableColumn text="quantity" name="formonly.quantity" colName="quantity" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <Edit width="12"/>
+      </TableColumn>
+      <TableColumn text="price" name="formonly.price" colName="price" fieldId="3" sqlTabName="formonly" tabIndex="4">
+        <Edit width="16"/>
+      </TableColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="order_num" fieldIdRef="0"/>
+    <Link colName="stock_num" fieldIdRef="1"/>
+    <Link colName="quantity" fieldIdRef="2"/>
+    <Link colName="price" fieldIdRef="3"/>
+  </RecordView>
+</Form>

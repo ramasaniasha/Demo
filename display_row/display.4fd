@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="mydb" fileVersion="31400" gstVersion="31407" name="managedform" uid="{409da3f4-f309-47c2-a4b3-e12553a4d760}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record active="false" name="rec" uid="{38708d0f-0973-4905-ad5a-7b5689f4a62f}">
+    <RecordField colName="store_name" fieldIdRef="1" fieldType="TABLE_COLUMN" name="customer.store_name" sqlTabName="customer" uid="{57759f5f-f2fa-491f-b440-a54217aae01b}"/>
+    <RecordField colName="phone" fieldIdRef="2" fieldType="TABLE_COLUMN" name="customer.phone" sqlTabName="customer" uid="{79276060-4d78-4b59-8600-92d2349075fc}"/>
+  </Record>
+  <Record masterTable="customer1" name="record1" uid="{be41a173-de70-49bc-acf1-e0cac8307ade}">
+    <RecordField colName="store_num" fieldIdRef="3" fieldType="TABLE_ALIAS" name="customer1.store_num" sqlTabName="customer" table_alias_name="customer1" uid="{6fa09281-dcd1-4024-af7a-b667a74774b8}"/>
+    <RecordField colName="store_name" fieldIdRef="4" fieldType="TABLE_ALIAS" name="customer1.store_name" sqlTabName="customer" table_alias_name="customer1" uid="{11f1ad1d-cac7-403a-aaec-abe2dc1d16c2}"/>
+    <RecordField colName="addr" fieldIdRef="5" fieldType="TABLE_ALIAS" name="customer1.addr" sqlTabName="customer" table_alias_name="customer1" uid="{1862e43a-2580-4f3b-b26d-3c264a4a9282}"/>
+    <RecordField colName="addr2" fieldIdRef="6" fieldType="TABLE_ALIAS" name="customer1.addr2" sqlTabName="customer" table_alias_name="customer1" uid="{31f49f6c-11dd-4362-9174-d74ad245c0d8}"/>
+    <RecordField colName="city" fieldIdRef="7" fieldType="TABLE_ALIAS" name="customer1.city" sqlTabName="customer" table_alias_name="customer1" uid="{fc958650-d616-4ebd-b3b0-932e18179a54}"/>
+    <RecordField colName="state" fieldIdRef="8" fieldType="TABLE_ALIAS" name="customer1.state" sqlTabName="customer" table_alias_name="customer1" uid="{85502c90-f77a-42b7-86ea-d7e5af7da40d}"/>
+    <RecordField colName="zipcode" fieldIdRef="9" fieldType="TABLE_ALIAS" name="customer1.zipcode" sqlTabName="customer" table_alias_name="customer1" uid="{344e937a-c456-42b8-8ebc-5669d4b4f19a}"/>
+    <RecordField colName="contact_name" fieldIdRef="10" fieldType="TABLE_ALIAS" name="customer1.contact_name" sqlTabName="customer" table_alias_name="customer1" uid="{078f7f3e-19ac-4df0-b079-a7a4809045fb}"/>
+    <RecordField colName="phone" fieldIdRef="11" fieldType="TABLE_ALIAS" name="customer1.phone" sqlTabName="customer" table_alias_name="customer1" uid="{63ff1b35-3012-4edd-8f73-2591ebc6f145}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="101" name="form" text="Form">
+    <Grid gridHeight="10" gridWidth="46" name="grid1" posX="21" posY="2">
+      <Edit colName="store_name" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" name="customer.store_name" posX="3" posY="1" sqlTabName="customer" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit colName="phone" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="customer.phone" posX="19" posY="1" sqlTabName="customer" tabIndex="-1" title="edit2" widget="Edit"/>
+    </Grid>
+    <Grid gridHeight="7" gridWidth="82" name="mydb1" posX="1" posY="15">
+      <Label gridHeight="1" gridWidth="9" name="customer1_store_num_label1" posX="1" posY="1">
+        <Initializer text="dbschema:customer.store_num/@label"/>
+      </Label>
+      <Edit colName="store_num" fieldId="3" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="11" name="customer1.store_num" posX="11" posY="1" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="customer1_store_name_label1" posX="32" posY="1">
+        <Initializer text="dbschema:customer.store_name/@label"/>
+      </Label>
+      <Edit colName="store_name" fieldId="4" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="30" name="customer1.store_name" posX="45" posY="1" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="customer1_addr_label1" posX="1" posY="2">
+        <Initializer text="dbschema:customer.addr/@label"/>
+      </Label>
+      <Edit colName="addr" fieldId="5" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="20" name="customer1.addr" posX="11" posY="2" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="customer1_addr2_label1" posX="32" posY="2">
+        <Initializer text="dbschema:customer.addr2/@label"/>
+      </Label>
+      <Edit colName="addr2" fieldId="6" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="20" name="customer1.addr2" posX="45" posY="2" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="customer1_city_label1" posX="1" posY="3">
+        <Initializer text="dbschema:customer.city/@label"/>
+      </Label>
+      <Edit colName="city" fieldId="7" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="15" name="customer1.city" posX="11" posY="3" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="customer1_state_label1" posX="32" posY="3">
+        <Initializer text="dbschema:customer.state/@label"/>
+      </Label>
+      <Edit colName="state" fieldId="8" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="2" name="customer1.state" posX="45" posY="3" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="customer1_zipcode_label1" posX="1" posY="4">
+        <Initializer text="dbschema:customer.zipcode/@label"/>
+      </Label>
+      <Edit colName="zipcode" fieldId="9" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="5" name="customer1.zipcode" posX="11" posY="4" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="customer1_contact_name_label1" posX="32" posY="4">
+        <Initializer text="dbschema:customer.contact_name/@label"/>
+      </Label>
+      <Edit colName="contact_name" fieldId="10" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="30" name="customer1.contact_name" posX="45" posY="4" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="customer1_phone_label1" posX="1" posY="5">
+        <Initializer text="dbschema:customer.phone/@label"/>
+      </Label>
+      <Edit colName="phone" fieldId="11" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="18" name="customer1.phone" posX="11" posY="5" scroll="true" sqlTabName="customer" tabIndex="-1" table_alias_name="customer1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADgANwAwADgAZAAwAGYALQAwADkANwAzAC0ANAA5ADAANQAtAGEAZAA1AGEALQA3AGIANQA2ADgAOQBmADQAYQA2ADIAZgB9AAAAAAAAAAAAAAAAAAAAAD+MrAgxJul8AQAAAEwAewBiAGUANAAxAGEAMQA3ADMALQBkAGUANwAwAC0ANAA5AGIAYwAtAGEAYwBmADEALQBlADAAYwBhAGMAOAAzADAANwBhAGQAZQB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

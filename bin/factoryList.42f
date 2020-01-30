@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="factoryList" build="3.20.07" sqlDbName="mydb" width="33" height="9">
+  <Group text="Factory List">
+    <Table pageSize="8" tabName="s_factory">
+      <TableColumn text="Factory Code" name="factory.fac_code" colName="fac_code" sqlType="CHAR(3)" required="1" notNull="1" fieldId="0" sqlTabName="factory" tabIndex="1">
+        <Edit width="14" scroll="1" comment="Enter factory code"/>
+      </TableColumn>
+      <TableColumn text="Factory Name" name="factory.fac_name" colName="fac_name" sqlType="CHAR(15)" fieldId="1" sqlTabName="factory" tabIndex="2">
+        <Edit width="15" scroll="1" comment="Enter factory name"/>
+      </TableColumn>
+    </Table>
+  </Group>
+  <RecordView tabName="factory">
+    <Link colName="fac_code" fieldIdRef="0"/>
+    <Link colName="fac_name" fieldIdRef="1"/>
+  </RecordView>
+</Form>

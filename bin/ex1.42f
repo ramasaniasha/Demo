@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="ex1" build="3.20.07" sqlDbName="mydb" width="62" height="7">
+  <Grid width="62" height="7">
+    <FormField name="formonly.mode_label" colName="mode_label" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="57" posY="0" posX="4" gridWidth="57"/>
+    </FormField>
+    <Label text="order_num #:" posY="1" posX="3" gridWidth="12"/>
+    <FormField name="formonly.order_num" colName="order_num" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <ButtonEdit width="3" action="zoom1" posY="1" posX="16" gridWidth="5"/>
+    </FormField>
+    <Label text="order_date:" posY="1" posX="23" gridWidth="11"/>
+    <FormField name="formonly.order_date" colName="order_date" fieldId="2" sqlTabName="formonly" tabIndex="3">
+      <DateEdit width="18" posY="1" posX="35" gridWidth="20"/>
+    </FormField>
+    <Label text="store_num:" posY="2" posX="3" gridWidth="10"/>
+    <FormField name="formonly.store_num" colName="store_num" fieldId="3" sqlTabName="formonly" tabIndex="4">
+      <Edit width="20" posY="2" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label text="fac_code :" posY="3" posX="3" gridWidth="10"/>
+    <FormField name="formonly.fac_code" colName="fac_code" fieldId="4" sqlTabName="formonly" tabIndex="5">
+      <ButtonEdit width="18" action="zoom" image="mag" posY="3" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label text="ship_instr:" posY="4" posX="2" gridWidth="11"/>
+    <FormField name="formonly.ship_instr" colName="ship_instr" fieldId="5" sqlTabName="formonly" tabIndex="6">
+      <Edit width="20" posY="4" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label text="promo:" posY="5" posX="7" gridWidth="6"/>
+    <FormField name="formonly.promo" colName="promo" fieldId="6" sqlTabName="formonly" tabIndex="7">
+      <CheckBox width="5" posY="5" posX="14" gridWidth="5"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="mode_label" fieldIdRef="0"/>
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="order_date" fieldIdRef="2"/>
+    <Link colName="store_num" fieldIdRef="3"/>
+    <Link colName="fac_code" fieldIdRef="4"/>
+    <Link colName="ship_instr" fieldIdRef="5"/>
+    <Link colName="promo" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="s_order">
+    <Link colName="order_num" fieldIdRef="1"/>
+    <Link colName="order_date" fieldIdRef="2"/>
+    <Link colName="store_num" fieldIdRef="3"/>
+    <Link colName="fac_code" fieldIdRef="4"/>
+    <Link colName="ship_instr" fieldIdRef="5"/>
+    <Link colName="promo" fieldIdRef="6"/>
+  </RecordView>
+</Form>

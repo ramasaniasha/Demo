@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31407" name="managedform" uid="{ff38f153-d5c0-4931-8920-db9ea38de7d1}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="record1" uid="{4387e8c5-99bc-4e5a-9c79-4fc8729effc2}">
+    <RecordField fieldIdRef="1" length="1" name="ed1" sqlType="CHAR" uid="{e612400b-83fc-4d9b-8b06-a735b652f486}"/>
+    <RecordField fieldIdRef="2" name="ed2" uid="{f51a0a04-6868-405e-b577-53eeda427c17}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="display array" text="Form">
+    <Grid gridHeight="9" gridWidth="48" name="" posX="16" posY="2">
+      <Edit fieldId="1" gridHeight="1" gridWidth="12" length="1" name="ed1" posX="7" posY="2" sqlType="CHAR" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit fieldId="2" gridHeight="1" gridWidth="12" name="ed2" posX="20" posY="2" tabIndex="-1" title="edit2" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADMAOAA3AGUAOABjADUALQA5ADkAYgBjAC0ANABlADUAYQAtADkAYwA3ADkALQA0AGYAYwA4ADcAMgA5AGUAZgBmAGMAMgB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

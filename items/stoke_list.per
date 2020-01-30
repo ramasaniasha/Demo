@@ -1,0 +1,23 @@
+DATABASE mydb
+
+LAYOUT 
+GRID 
+{
+
+<t t1                                                                                 >
+   stock_num        fac_code             
+  [c1               |c2           ]
+  [c1               |c2           ]
+  [c1               |c2           ]
+
+} 
+END 
+ATTRIBUTES 
+
+EDIT c1= formonly.stock_num;
+EDIT c2 =formonly.fac_code;
+
+
+END
+INSTRUCTIONS
+SCREEN RECORD scr(stock_num,fac_code); 

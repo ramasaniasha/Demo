@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="stoke_list" build="3.20.07" sqlDbName="mydb" width="87" height="7">
+  <Grid width="87" height="7">
+    <Table pageSize="3" width="87" posY="1" posX="0" gridWidth="87" gridHeight="5" tabName="scr">
+      <TableColumn text="stock_num" name="formonly.stock_num" colName="stock_num" fieldId="0" sqlTabName="formonly" tabIndex="1">
+        <Edit width="17"/>
+      </TableColumn>
+      <TableColumn text="fac_code" name="formonly.fac_code" colName="fac_code" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <Edit width="13"/>
+      </TableColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="stock_num" fieldIdRef="0"/>
+    <Link colName="fac_code" fieldIdRef="1"/>
+  </RecordView>
+</Form>

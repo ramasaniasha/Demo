@@ -1,0 +1,38 @@
+SCHEMA mydb
+
+LAYOUT
+    GRID
+{
+<G "Customer Information"                                    >
+[mode_label                                                  ]
+[" order_num:"][fld001              ]
+["order_date:"][fld002              ]
+[" store_num:"][fld003       ][" fac_code:"][fld004        ]
+["ship_instr:"][fld005            ]
+["     promo:"][fld006              ]
+}
+    END --GRID
+END --LAYOUT
+
+TABLES
+    orders
+END --TABLES
+
+ATTRIBUTES
+    LABEL mode_label = formonly.mode_label, COLOR=BLUE, STYLE="psModeLabel";
+    EDIT fld001 = orders.order_num, COMMENT="Enter order number";
+    DATEEDIT fld002 = orders.order_date, NOT NULL, COMMENT="Enter order date";
+    EDIT fld003 = orders.store_num, COMMENT="Enter store number ";
+    EDIT fld004 = orders.fac_code, COMMENT="Enter factory code ";
+    EDIT fld005 = orders.ship_instr, COMMENT="Enter shippint instructions ";
+    EDIT fld006 = orders.promo, COMMENT="Enter promo";
+ END --ATTRIBUTES
+
+INSTRUCTIONS
+    SCREEN RECORD scr (orders.order_num,
+                              orders.order_date,
+                              orders.store_num,
+                              orders.fac_code,
+                              orders.ship_instr,
+                              orders.promo);
+END --INSTRUCTIONS

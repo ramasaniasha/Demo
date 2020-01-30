@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="31407" id="{7b5cfa98-444d-4f8b-9026-7e1630496df9}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings last="SQLite">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="SQLite"/>
+  </ExtractionSettings>
+  <Table active="true" name="city" status="U" uuid="db/table41">
+    <Column fglLength="2" fglType="0" name="city_code" notNull="false" order="1" status="U" uuid="db/column173"/>
+    <Column fglLength="15" fglType="0" name="city_name" notNull="false" order="2" status="U" uuid="db/column175"/>
+  </Table>
+  <Table active="true" name="customer" status="U" uuid="db/table43">
+    <Column fglLength="4" fglType="2" name="store_num" notNull="true" order="1" status="U" uuid="db/column177"/>
+    <Column fglLength="30" fglType="0" name="store_name" notNull="false" order="2" status="U" uuid="db/column179"/>
+    <Column fglLength="20" fglType="0" name="addr" notNull="false" order="3" status="U" uuid="db/column181"/>
+    <Column fglLength="20" fglType="0" name="addr2" notNull="false" order="4" status="U" uuid="db/column183"/>
+    <Column fglLength="15" fglType="0" name="city" notNull="false" order="5" status="U" uuid="db/column185"/>
+    <Column fglLength="2" fglType="0" name="state" notNull="false" order="6" status="U" uuid="db/column187"/>
+    <Column fglLength="5" fglType="0" name="zipcode" notNull="false" order="7" status="U" uuid="db/column189"/>
+    <Column fglLength="30" fglType="0" name="contact_name" notNull="false" order="8" status="U" uuid="db/column191"/>
+    <Column fglLength="18" fglType="0" name="phone" notNull="false" order="9" status="U" uuid="db/column193"/>
+  </Table>
+  <Table active="true" name="employee" status="U" uuid="db/table45">
+    <Column fglLength="4" fglType="2" name="emp_id" notNull="false" order="1" status="U" uuid="db/column195"/>
+    <Column fglLength="20" fglType="0" name="emp_name" notNull="false" order="2" status="U" uuid="db/column197"/>
+  </Table>
+  <Table active="true" name="factory" status="U" uuid="db/table47">
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="true" order="1" status="U" uuid="db/column199"/>
+    <Column fglLength="15" fglType="0" name="fac_name" notNull="false" order="2" status="U" uuid="db/column201"/>
+  </Table>
+  <Table active="true" name="items" status="U" uuid="db/table49">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="true" order="1" status="U" uuid="db/column203"/>
+    <Column fglLength="4" fglType="2" name="stock_num" notNull="true" order="2" status="U" uuid="db/column205"/>
+    <Column fglLength="2" fglType="1" name="quantity" notNull="false" order="3" status="U" uuid="db/column207"/>
+    <Column fglLength="2050" fglType="5" name="price" notNull="false" order="4" status="U" uuid="db/column209"/>
+  </Table>
+  <Table active="true" name="orders" status="U" uuid="db/table51">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="true" order="1" status="U" uuid="db/column211"/>
+    <Column fglLength="4" fglType="7" name="order_date" notNull="false" order="2" status="U" uuid="db/column213"/>
+    <Column fglLength="4" fglType="2" name="store_num" notNull="true" order="3" status="U" uuid="db/column215"/>
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="false" order="4" status="U" uuid="db/column217"/>
+    <Column fglLength="10" fglType="0" name="ship_instr" notNull="false" order="5" status="U" uuid="db/column219"/>
+    <Column fglLength="1" fglType="0" name="promo" notNull="false" order="6" status="U" uuid="db/column221"/>
+  </Table>
+  <Table active="true" name="state" status="U" uuid="db/table53">
+    <Column fglLength="15" fglType="0" name="state_code" notNull="true" order="1" status="U" uuid="db/column223"/>
+    <Column fglLength="15" fglType="0" name="state_name" notNull="false" order="2" status="U" uuid="db/column225"/>
+  </Table>
+  <Table active="true" name="stock" status="U" uuid="db/table55">
+    <Column fglLength="4" fglType="2" name="stock_num" notNull="true" order="1" status="U" uuid="db/column227"/>
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="true" order="2" status="U" uuid="db/column229"/>
+    <Column fglLength="15" fglType="0" name="description" notNull="false" order="3" status="U" uuid="db/column231"/>
+    <Column fglLength="2050" fglType="5" name="reg_price" notNull="false" order="4" status="U" uuid="db/column233"/>
+    <Column fglLength="2050" fglType="5" name="promo_price" notNull="false" order="5" status="U" uuid="db/column235"/>
+    <Column fglLength="4" fglType="7" name="price_updated" notNull="false" order="6" status="U" uuid="db/column237"/>
+    <Column fglLength="4" fglType="0" name="unit" notNull="false" order="7" status="U" uuid="db/column239"/>
+  </Table>
+  <Table active="true" name="students" status="U" uuid="db/table57">
+    <Column fglLength="4" fglType="2" name="user_id" notNull="false" order="1" status="U" uuid="db/column241"/>
+    <Column fglLength="20" fglType="0" name="fname" notNull="false" order="2" status="U" uuid="db/column243"/>
+    <Column fglLength="20" fglType="0" name="lname" notNull="false" order="3" status="U" uuid="db/column245"/>
+    <Column fglLength="20" fglType="0" name="state" notNull="false" order="4" status="U" uuid="db/column247"/>
+    <Column fglLength="20" fglType="0" name="city" notNull="false" order="5" status="U" uuid="db/column249"/>
+  </Table>
+  <Table active="true" name="test" status="U" uuid="db/table59">
+    <Column fglLength="4" fglType="2" name="id" notNull="false" order="1" status="U" uuid="db/column251"/>
+    <Column fglLength="20" fglType="0" name="fname" notNull="false" order="2" status="U" uuid="db/column253"/>
+    <Column fglLength="10" fglType="0" name="lname" notNull="false" order="3" status="U" uuid="db/column255"/>
+    <Column fglLength="15" fglType="0" name="state" notNull="false" order="4" status="U" uuid="db/column257"/>
+    <Column fglLength="4" fglType="2" name="zipcode" notNull="false" order="5" status="U" uuid="db/column44"/>
+  </Table>
+</Schema>

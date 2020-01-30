@@ -1,0 +1,42 @@
+DATABASE mydb
+
+LAYOUT
+ TABLE
+ {
+  Id   Name                   Address                                    City             State   Zipcode       Contact          Phone
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ [f01][f02                  ][f03                ][f04                 ][f05            ][f6    ][f07         ][f08            ][f09         ]
+ }
+ END
+END
+
+TABLES customer
+END
+
+ATTRIBUTES
+EDIT f01=customer.store_num, REQUIRED;
+EDIT f02=customer.store_name, REQUIRED;
+EDIT f03=customer.addr;
+EDIT f04=customer.addr2;
+EDIT f05=customer.city;
+COMBOBOX f6=customer.state, ITEMS = ("IA", "IL", "WI");
+EDIT f07=customer.zipcode;
+EDIT f08=customer.contact_name;
+f09=customer.phone;
+END
+
+INSTRUCTIONS
+SCREEN RECORD sa_cust(store_num,
+                       store_name,
+                       addr,
+                       addr2,
+                       city,
+                       state,
+                       zipcode,
+                       contact_name,
+                       phone);
+END

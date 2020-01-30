@@ -1,0 +1,33 @@
+SCHEMA mydb
+LAYOUT
+GRID 
+{
+   [mode_label                                               ]
+   order_num #:[f01  ] stock_num:[f02                 ]
+   quantity:[f03                 ]
+   price   :[f04                 ]
+  
+}
+ END
+END 
+
+
+ATTRIBUTES
+EDIT mode_label=formonly.mode_label;
+EDIT f01=formonly.order_num;
+--EDIT f02=formonly.stock_num;
+BUTTONEDIT f02 =formonly.stock_num , ACTION=zoom1, IMAGE="mag", COMMENT="Enter or select a factory";
+EDIT f03=formonly.quantity;
+EDIT f04=formonly.price;
+
+END
+
+INSTRUCTIONS
+    SCREEN RECORD s_order (formonly.order_num,
+                              formonly.stock_num,
+                              formonly.quantity,
+                              formonly.price);
+ 
+
+
+end

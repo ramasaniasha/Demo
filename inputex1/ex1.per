@@ -1,0 +1,38 @@
+SCHEMA mydb
+LAYOUT
+GRID 
+{
+   [mode_label                                               ]
+   order_num #:[f01  ] order_date:[f02                 ]
+   store_num:[f03                 ]
+   fac_code :[f04                 ]
+  ship_instr:[f05                 ] 
+       promo:[f06  ]
+
+}
+ END
+END 
+
+
+ATTRIBUTES
+EDIT mode_label=formonly.mode_label;
+BUTTONEDIT f01=formonly.order_num,ACTION =zoom1;
+DATEEDIT f02=formonly.order_date;
+EDIT f03=formonly.store_num;
+BUTTONEDIT f04=formonly.fac_code,ACTION=zoom,IMAGE="mag";
+EDIT f05=formonly.ship_instr;
+CHECKBOX f06=formonly.promo;
+
+END
+
+INSTRUCTIONS
+    SCREEN RECORD s_order (formonly.order_num,
+                              formonly.order_date,
+                              formonly.store_num,
+                              formonly.fac_code,
+                              formonly.ship_instr,
+                              formonly.promo);
+ 
+
+
+end

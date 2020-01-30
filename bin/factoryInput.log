@@ -1,0 +1,28 @@
+Date: 01/27/2020    Time: 13:28:18
+Program error at 'inputFactory.4gl', line number 22.
+SQL statement error number -6366 (0).
+Could not load database driver dbmdefault. Set FGLSQLDEBUG to get more details.
+Date: 01/27/2020    Time: 13:28:18
+#0 errorHandler() at inputFactory.4gl:283
+#1 main() at inputFactory.4gl:22
+
+Date: 01/27/2020    Time: 13:28:30
+Program error at 'inputFactory.4gl', line number 24.
+FORMS statement error number -1110.
+Form file (factory) not found.
+Date: 01/27/2020    Time: 13:28:30
+#0 errorHandler() at inputFactory.4gl:283
+#1 main() at inputFactory.4gl:24
+
+Date: 01/27/2020    Time: 13:28:32
+Program error at 'inputFactory.4gl', line number 26.
+FORMS statement error number -8083.
+Null pointer exception.
+Date: 01/27/2020    Time: 13:28:32
+#0 errorHandler() at inputFactory.4gl:283
+#1 main() at inputFactory.4gl:26
+
+Date: 01/27/2020    Time: 13:28:32
+Program error at 'UIHelper.4gl', line number 2.
+FORMS statement error number -6311.
+No current window.
